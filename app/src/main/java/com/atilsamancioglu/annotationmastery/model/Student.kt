@@ -13,7 +13,6 @@ data class Student(
     init {
         val fields = this::class.java.declaredFields
         fields.forEach { field ->
-            field.annotations.forEach {
                 if(field.isAnnotationPresent(ValidEmail::class.java)) {
                     val regex = field.getAnnotation(ValidEmail::class.java)?.regex
                     if(regex?.toRegex()?.matches(email) != true) {
@@ -27,7 +26,6 @@ data class Student(
                             throw IllegalArgumentException("${field.name} is not valid!")
                         }
                     }
-                }
             }
         }
     }
