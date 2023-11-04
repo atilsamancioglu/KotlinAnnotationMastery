@@ -51,16 +51,25 @@ class MainActivity : ComponentActivity() {
             }
         }
         val student = Student(name="atil", surname = "sam" ,email = "atilsamancioglu@gmail.com")
-        println(student.email)
+        //println(student.email)
 
         lifecycleScope.launch {
             api.getJokes()
             api.getCryptos()
         }
 
-        val atil = Instructor(name="Atıl", surname = "Samancıoğlu",age=36, country = "TR")
-        atil.printAllVars()
-        atil.printVIPVars()
+        val atil = Instructor(name="Atıl",
+            surname = "Samancıoğlu",
+            age=36,
+            country = "TR",
+            rating1 = 10,
+            rating2 = 10,
+            rating3 = 10,
+            rating4 = 10,
+            rating5 = 10,
+            rating6 = 10)
+        atil.sumRatings()
+
     }
 }
 
