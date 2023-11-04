@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
+import com.atilsamancioglu.annotationmastery.model.Instructor
 import com.atilsamancioglu.annotationmastery.model.Student
 import com.atilsamancioglu.annotationmastery.service.FantasticAPI
 import com.atilsamancioglu.annotationmastery.ui.theme.AnnotationMasteryTheme
@@ -56,6 +57,10 @@ class MainActivity : ComponentActivity() {
             api.getJokes()
             api.getCryptos()
         }
+
+        val atil = Instructor(name="Atıl", surname = "Samancıoğlu",age=36, country = "TR")
+        atil.printAllVars()
+        atil.printVIPVars()
     }
 }
 

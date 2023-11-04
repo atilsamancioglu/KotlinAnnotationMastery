@@ -10,3 +10,9 @@ annotation class ValidString(val regex: String)
 
 @Target(AnnotationTarget.FUNCTION)
 annotation class AuthTokenNeeded
+
+@Target(AnnotationTarget.FIELD)
+annotation class VIPFields
+
+@Target(AnnotationTarget.FIELD)
+annotation class Summable
