@@ -29,7 +29,7 @@ fun displayResults(sum: Int, max: Int) {
     println("Max: $max")
 }
 
-fun main() {
+fun mainRight() {
     val numbers = listOf(1, 2, 3, 4, 5)
     val sum = sumNumbers(numbers)
     val max = findMax(numbers)
