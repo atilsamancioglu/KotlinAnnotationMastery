@@ -69,7 +69,8 @@ class MainActivity : ComponentActivity() {
             rating5 = 10,
             rating6 = 10)
         atil.sumRatings()
-
+        //atil.printAllVars()
+        //atil.printVIPVars()
     }
 }
 

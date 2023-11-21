@@ -16,3 +16,4 @@ annotation class VIPFields
 
 @Target(AnnotationTarget.FIELD)
 annotation class Summable
+
