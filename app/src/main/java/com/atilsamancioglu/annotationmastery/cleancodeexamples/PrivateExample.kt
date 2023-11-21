@@ -1,7 +1,11 @@
 package com.atilsamancioglu.annotationmastery.cleancodeexamples
 
 class Dog {
-    val trick = Trick()
+    private val trick = Trick()
+
+    fun doTrick() {
+        trick.executeTrick()
+    }
 }
 class Trick {
     fun executeTrick() {
@@ -12,7 +16,8 @@ class Animal(
     dog : Dog
 ) {
     init {
-        dog.trick.executeTrick()
+        dog.doTrick()
     }
 }
+
 
